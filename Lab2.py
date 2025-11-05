@@ -35,7 +35,8 @@ def calc_median(num_list):
 def calculate_bmi(height,weight):
     print ("Height= "+str(height))
     print ("weight= "+str(weight))
-    return height,weight
+    bmi= weight/(height*height)
+    return bmi
 
 
 
@@ -46,9 +47,9 @@ def main():
     average=calc_average(num_list)
     calc_min_and_max_temp(num_list)
     calc_median(num_list)
-    height, weight=calculate_bmi(weight=75, height=1.85)
+    bmi=calculate_bmi(weight=75, height=1.85)
 
-    bmi= weight/(height*height)
+    
     print("bmi= "+str(bmi))
     if bmi<18.5:
         delta=-1
